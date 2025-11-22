@@ -1,0 +1,116 @@
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --radius: 8px;
+  --font-body: "Inter", sans-serif;
+  --font-heading: "Poppins", sans-serif;
+}
+
+/* Override do Bootstrap */
+:root {
+  --bs-primary: var(--primary-color);
+  --bs-secondary: var(--secondary-color);
+  --bs-border-radius: var(--radius);
+}
+
+body {
+  font-family: var(--font-body);
+}
+h1 {
+  font-family: var(--font-heading);
+}
+
+.custom-container {
+  max-width: 1134px;
+}
+
+.logo {
+  height: 65px;
+  width: 347px;
+}
+
+.custom-box {
+  background-color: var(--gray-100);
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  box-shadow: 0px -5px 0px #67c0c2;
+  padding: 2rem;
+}
+
+.custom-form-label {
+  margin-bottom: .375rem !important;
+}
+.custom-form-control {
+  padding: .625rem .75rem !important;
+}
+
+.btn-static {
+  pointer-events: none !important;
+  cursor: default !important;
+  
+  --bs-btn-hover-bg: var(--bs-primary);
+  --bs-btn-hover-border-color: var(--bs-primary);
+  --bs-btn-active-bg: var(--bs-primary);
+  --bs-btn-active-border-color: var(--bs-primary);
+  --bs-btn-focus-shadow-rgb: 0,0,0;
+}
+
+.select-custom {
+  padding: 10px 16px !important;
+  background-position: right 16px center !important;
+  background-size: 10px !important;
+  padding-right: 36px !important;
+}
+
+.btn-soft {
+  background-color: var(--red-100) !important;
+  border-color: var(--red-100) !important;
+  color: var(--red-600) !important;
+  font-weight: 600;
+}
+
+.task-col {
+  width: 410px;
+  max-width: 410px;
+  min-width: 410px;
+}
+
+.task-text {
+  display: inline-block;
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+
+.text-strike {
+  text-decoration: line-through;
+  opacity: 0.8;
+}
+
+.badge-completed {
+  font-size: 0.75rem;
+  vertical-align: middle;
+}
+
+.custom-toast {
+  min-width: 220px;
+}
+
+.footer {
+  border-top: 1px solid var(--gray-400);
+}
+
+.logo-footer {
+  height: 32px;
+  width: 169px;
+}
+
+.gap-4px {
+  gap: .25rem !important;
+}
+
+.gap-32 {
+  gap: 2rem !important;
+}
